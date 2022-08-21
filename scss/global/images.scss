@@ -1,0 +1,68 @@
+header {
+    .container {
+        .logo-img {
+            padding-top: 25px;
+            padding-bottom: 15px;
+            height: 55px;
+            margin-left: 150px;
+            @include tablet {
+                margin-left: 100px;
+            }
+            @include small-screen {
+                margin-left: 50px;
+                height: 40px;
+                padding-right: 30px;
+            }
+            @include mobile {
+                margin-left: 50px;
+                height: 35px;
+            }
+        }
+    }
+}
+.bg-showcase {
+    max-height: 500px;
+    width: 50%;
+    @include small-screen {
+        max-height: 400px;
+        width:100%;
+    }
+    @include mobile {
+        max-height: 400px;
+        width:100%;
+    }
+    img {
+        object-fit: fill;
+        width: 100%;
+        max-height: 500px;
+        @include small-screen {
+             max-height: 400px;
+        }
+         @include mobile {
+            max-height: 400px;
+        }
+    }    
+}
+footer {
+    .footer-container{
+        .emails {
+            .footer-icons {
+                @include tablet {width: 20px;
+                }
+            }
+        }
+        .footer-icons {
+            padding-right: 15px;
+            @include tablet {
+                height: 20px;
+            }
+        }
+        .footer-first-column {
+            .logo-img {
+                height: 45px;
+                padding-bottom: 15px;
+
+            }
+        }
+    }
+}
