@@ -66,3 +66,31 @@ footer {
         }
     }
 }
+
+.tech-showcase {
+    img {
+        max-height: 400px;
+        width: 100%;
+    }
+    @include mobile {
+        max-height: 600px;
+        width: 100%;
+    }
+}
+.tech-pic {
+    img {
+        max-height: 700px;
+        width: 100%;
+        object-fit: fill;
+  
+    }
+}
+.tech-showcase-calc {
+    img {
+        max-height: 700px;
+        width: 100%;
+    }
+    @include mobile {
+        max-height: 400px;
+    }
+}

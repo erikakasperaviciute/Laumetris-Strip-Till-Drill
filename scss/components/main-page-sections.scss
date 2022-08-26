@@ -15,7 +15,7 @@
     @include mobile {
         display: flex;
         flex-direction: column;
-        max-height: 850px;
+        max-height: 800px;
     }
 
     p {
@@ -51,7 +51,7 @@
     @include mobile {
         display: flex;
         flex-direction: column;
-        max-height: 850px;
+        max-height: 800px;
     }
     p {
         padding-right: 100px;
@@ -91,7 +91,7 @@
     @include mobile {
         display: flex;
         flex-direction: column;
-        height: 450px;
+        height: 400px;
         width: 100%;
     }
     h2 {

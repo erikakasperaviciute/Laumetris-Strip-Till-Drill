@@ -10,12 +10,6 @@
     }
 } 
 
-// @mixin smaller-screen {
-//     @media (max-width: 925px) {
-//       @content;
-//     }
-// } 
-
   @mixin small-screen {
     @media (min-width:700px) and (max-width: 925px) {
       @content;
