@@ -28,6 +28,10 @@
             padding-left: 50px;
             padding-right: 50px;
         }
+        @include mobile {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     }
     .learn-more-btn {
         margin-left: 90px;
@@ -36,6 +40,9 @@
         }
         @include smaller-tablet {
             margin-left: 35px;
+        }
+        @include mobile {
+            margin-left: 5px;
         }
     }
 }
@@ -63,6 +70,10 @@
             padding-right: 50px;
             padding-left: 50px;
         }
+        @include mobile {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     }
     .learn-more-btn {
         margin-left: 73px;
@@ -71,6 +82,9 @@
         }
         @include smaller-tablet {
             margin-left: 35px;
+        }
+        @include mobile {
+            margin-left: 5px;
         }
     }
 }
