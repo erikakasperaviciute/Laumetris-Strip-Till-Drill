@@ -38,9 +38,13 @@ header {
         max-height: 500px;
         @include small-screen {
              max-height: 400px;
+             width: 100%;
+             object-fit: fill;
         }
          @include mobile {
             max-height: 400px;
+            width: 100%;
+            object-fit: fill;
         }
     }    
 }
@@ -73,6 +77,8 @@ footer {
     img {
         max-height: 400px;
         width: 100%;
+
+
     }
     @include mobile {
         max-height: 600px;
@@ -81,9 +87,9 @@ footer {
 }
 .tech-pic {
     img {
-        max-height: 700px;
+        max-height: 600px;
         width: 100%;
-        object-fit: fill;
+        object-fit: cover;
   
     }
 }
@@ -94,5 +100,23 @@ footer {
     }
     @include mobile {
         max-height: 400px;
+    }
+}
+
+.pic-column {
+        img {
+            width: 100%;
+            object-fit: cover;
+    }
+}
+.rapeseed-showcase {
+    img {
+        max-height: 400px;
+        width: 100%;
+
+    }
+    @include mobile {
+        max-height: 600px;
+        width: 100%;
     }
 }

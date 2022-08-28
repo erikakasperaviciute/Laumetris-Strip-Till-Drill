@@ -1,7 +1,7 @@
 h1, h2, h3 {
     font-family: 'Clash Display', sans-serif;
 }
-a, p, span {
+a, p, span, th, td {
     font-family: 'Poppins', sans-serif;
 }
 a {
@@ -14,7 +14,7 @@ a {
     }
 }
 h1 {
-    font-size: calc(2em + 6vw);
+    font-size: calc(2em + 5vw);
     @include mobile {
         font-size: calc(2.2em + 2vw);
         line-height: 2.5em;
@@ -63,5 +63,10 @@ p {
     @include mobile {
         font-size: 14px;
     }
-
+}
+th, td {
+    font-size: 1em;
+    @include tablet {
+        font-size: 0.8em;
+    }
 }
