@@ -92,7 +92,7 @@
         }
     }
     .tech-showcase {
-        width: 70%;
+        width: 60%;
         max-height: 400px;
         @include small-screen {
             display: flex;
@@ -127,7 +127,7 @@
      // flex-wrap: wrap;
         justify-content: center;
         margin-left: 30px;
-        width:30%;
+        width:40%;
         max-height: 400px;
         @include small-screen {
             display: flex;

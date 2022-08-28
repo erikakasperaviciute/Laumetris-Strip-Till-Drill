@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&f[]=poppins@500,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<title>Laumetris</title>
 </head>
@@ -28,15 +29,15 @@
     <main>
         <section class="hero"> <img class="hero-image" src="images/hero-photo.jpg" alt="">
             <div class="hero-content-container">
-                <div class="first-column">
+                <div class="first-column" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="false">
                     <h1>rapeseed <br> strip till <br>  drill - rsl</h1>
                 </div>
             </div>
         </section>
         <section class="technology-atributes rapeseed-atributes">
             <div class="technology-row">
-                <h2>RSL strip till rapeseed drilling</h2>
-                <p>Growing rapeseed / oilseed is one of the most profitable crops in farming. Though, profitability is not defined by high prices of rapeseed in the market. 
+                <h2>RSL rapeseed strip till drilling</h2>
+                <p>Growing rapeseed/oilseed is one of the most profitable crops in farming. Though, profitability is not defined by high prices of rapeseed in the market. 
                     As in every business profit comes from positive subtraction of total turnover and costs, including fields preparation, seeding costs, fertilizers, spraying, 
                     harvesting, drying, etc. Strip tilling highly reduce costs in general. Fields preparation in conventional farming is a very expensive addition to overall costs. 
                     Rapeseed strip till drilling omits many unnecessary operations. Farming this way allows you to increase profitability, as well your farm will diminish erosion and help to improve fertility of your soils.
@@ -66,7 +67,7 @@
 
                 </p>
             </div>
-            <div class="tech-pic">
+            <div class="rapeseed-pic">
                 <img src="images/RSL.jpg">
             </div>
             <div class="technology-row">
@@ -80,7 +81,7 @@
             </div>
             <div class="rapeseed-with-picture-row-reverse">
                 <div class="rapeseed-content">
-                    <h3>Strip till rapeseed drilling combines the best attributes of both  no tillage and conventional tillage technologies</h3>
+                    <h3>Rapeseed strip till drilling combines the best attributes of both  no tillage and conventional tillage technologies</h3>
                 </div>
                 <div class="rapeseed-showcase">
                     <img src="images/Rapeseed 03 final wider.jpg">
@@ -139,7 +140,10 @@
             </div>
             <div class="specification-container">
                 <h3>RSL technical specifications</h3>
-                <table class="duom"  style="border: 1px solid #FBF8F3;">
+                <span>
+                    Technical details listed in the table are preliminary
+                </span>
+                <table class="spec-table">
 					<tbody>
 						<tr>
 							<th style="text-align: left;">
@@ -352,11 +356,7 @@
 								300-380</td>
 							<td>
 								380</td>
-						</tr>
-						
-						
-						
-						
+						</tr>	
 						<tr>
 							<td colspan="8" style="text-align: center;">
 								Additional equipment</td>
@@ -404,9 +404,19 @@
 					</tbody>
 				</table>
             </div>
+            <div class="video">
+                <div class="video-row">
+                <iframe  allowfullscreen="" frameborder="0" src="//www.youtube.com/embed/auXiVYED4lc?feature=player_detailpage"></iframe>
+                </div>
+                <div class="three-videos-in-row">
+                    <iframe  allowfullscreen="" frameborder="0" src="//www.youtube.com/embed/MKWdl7vrefs?feature=player_detailpage"></iframe>
+                    <iframe  allowfullscreen="" frameborder="0" src="//www.youtube.com/embed/_OoFTsb7HXg?feature=player_detailpage"></iframe>
+                    <iframe  allowfullscreen="" frameborder="0" src="//www.youtube.com/embed/Sw7h4PuK3rU?feature=player_detailpage"></iframe>
+                    <!-- <iframe  allowfullscreen="" frameborder="0" src="//www.youtube.com/embed/IMknxYSvcZA?feature=player_detailpage"></iframe> -->
+    
+                </div>
 
-
-
+            </div>
 
         </section>
 
@@ -451,4 +461,8 @@
         </footer>
     </main>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>

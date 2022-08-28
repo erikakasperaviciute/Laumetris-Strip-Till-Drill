@@ -69,4 +69,7 @@ th, td {
     @include tablet {
         font-size: 0.8em;
     }
+    @include mobile {
+        font-size: 0.65em;
+    }
 }
