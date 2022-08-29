@@ -1,6 +1,8 @@
 body {
     margin: 0;
-    background-color: $floral-white;
+    background-color: #FBF8F3;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
     a {
       text-decoration: none;
       color: #000000;
@@ -12,5 +14,6 @@ body {
   html {
     scroll-behavior: smooth;
   }
+
 @import "global/global-base.scss";
 @import "components/components-base.scss";
