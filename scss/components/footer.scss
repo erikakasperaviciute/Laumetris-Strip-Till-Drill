@@ -20,7 +20,7 @@ footer {
         display: flex;
         justify-content: space-between;
         padding-top: 65px;
-        padding-bottom: 55px;
+        padding-bottom: 45px;
         padding-right: 150px;
         padding-left: 150px;
 
@@ -49,74 +49,79 @@ footer {
 
             a {
                 &:hover {
-                    opacity: 0.8;
+                    opacity: 0.9;
+                    text-decoration: underline;
                 }
             }
-        }
+        }    
 
-        .footer-second-column {
-            padding-right: 50px;
-            padding-left: 50px;
+            .footer-second-column {
+                padding-right: 50px;
+                padding-left: 50px;
 
-            @include mobile {
-                padding-right: 0;
-                padding-left: 0;
-                padding-top: 20px;
-                padding-bottom: 20px;
+                @include mobile {
+                    padding-right: 0;
+                    padding-left: 0;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+
+                .contact {
+                    padding-bottom: 15px;
+                }
+
+                .address,
+                .phones,
+                .emails {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    a {
+                        &:hover {
+                            opacity: 0.9;
+                            text-decoration: underline
+                        }
+                    }
+                }
             }
 
-            .contact {
-                padding-bottom: 15px;
-            }
-
-            .address,
-            .phones,
-            .emails {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
+            .footer-third-column {
 
                 a {
+                    text-decoration: none;
+                    padding-left: 10px;
+
+                }
+
+                img {
+                    padding-top: 10px;
+                    height: 24px;
+
+                    @include tablet {
+                        height: 20px;
+                    }
+
                     &:hover {
-                        opacity: 0.8;
+                        opacity: 0.9;
+                        transform: scale(1.2);
+                        transition-duration: 0.3s;
                     }
                 }
             }
         }
+    
 
-        .footer-third-column {
-
-            a {
-                text-decoration: none;
-                padding-left: 10px;
-
-            }
-
-            img {
-                padding-top: 10px;
-                height: 24px;
-
-                @include tablet {
-                    height: 20px;
-                }
-
-                &:hover {
-                    opacity: 0.8;
-                }
-            }
+        .copyright {
+            font-size: 12px;
+            opacity: 0.8;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 45px;
         }
     }
 
-    .copyright {
-        font-size: 12px;
-        opacity: 0.8;
+    .social-icons {
         display: flex;
-        justify-content: center;
-        padding-bottom: 45px;
+        flex-direction: row;
     }
-}
-
-.social-icons {
-    display: flex;
-    flex-direction: row;
-}

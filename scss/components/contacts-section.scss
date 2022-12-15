@@ -1,0 +1,165 @@
+.contacts-container {
+
+    .contacts-row {
+        display: flex;
+        flex-direction: row;
+        margin-right: 150px;
+        margin-left: 150px;
+        padding-bottom: 100px;
+        justify-content: space-between;
+        
+
+
+
+    @include tablet {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    @include small-screen {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-bottom: 60px;
+    }
+}
+    h2 {
+        text-transform: uppercase;
+        font-weight: bolder;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 60px;
+
+        @include mobile {
+            padding-top: 60px;
+        }
+    }
+
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        input, textarea {
+            padding: 15px;
+            margin-bottom: 15px;
+            margin-top:5px;
+            border-style: none;
+            border-radius: 2px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            @include mobile {
+                padding: 10px;
+            }
+
+    }
+    .btn {
+        width:fit-content;
+        border-style: none;
+        background-color: $nero;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-top: 30px;
+        @include mobile {
+            align-self: center;
+        }
+        .btn-svg {
+            padding-left: 5px;
+            padding-top: 3px;
+            width: 16px;
+    
+            @include tablet {
+                width: 14px;
+            }
+        }
+    }
+    }
+
+
+}
+
+.contacts-form-column {
+    width: 48%;
+    @include mobile {
+        width: 100%;
+    }
+
+}
+.contacts-info-column {
+    width: 48%;
+    @include mobile {
+        margin-top: 60px;
+        width: 100%;
+    }
+    iframe {
+        margin-bottom: 30px;
+    }
+    .contact {
+        padding-bottom: 15px;
+    }
+
+    .address,
+    .phones,
+    .emails {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        a {
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+        p,
+        a {
+            font-size: 14px;
+    
+            @include tablet {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+ @-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+  .pulsate-bck {
+	-webkit-animation: pulsate-bck 2s ease-in-out infinite both;
+	        animation: pulsate-bck 2s ease-in-out infinite both;
+}

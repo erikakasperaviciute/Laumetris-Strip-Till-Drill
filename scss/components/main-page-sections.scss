@@ -166,6 +166,8 @@
     &:hover {
         color: green;
         fill: green;
+        transform: scale(1.1);
+        transition-duration: 0.3s;
     }
 
     .btn-svg {

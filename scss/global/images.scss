@@ -90,7 +90,6 @@ footer {
     img {
         max-height: 400px;
         width: 100%;
-
         &:hover {
             opacity: 0.9;
             cursor: zoom-in;
@@ -132,21 +131,6 @@ footer {
     }
 }
 
-// .rapeseed-pic {
-//     img {
-//         height: 500px;
-//         width: 100%;
-//         object-fit: cover;
-//         @include small-screen {
-//             height: 500px;
-//         }
-//         @include mobile {
-//             height: auto;
-//             object-fit: contain;
-//         }
-//     }
-// }
-
 .pic-column {
     img {
         width: 100%;
@@ -175,4 +159,13 @@ footer {
         max-height: 600px;
         width: 100%;
     }
+}
+
+.contacts-icons {
+    padding-right: 15px;
+    @include tablet {
+        width: 20px;
+        height: 20px;
+    }
+
 }

@@ -2,10 +2,14 @@ h1, h2, h3 {
     font-family: 'Clash Display', sans-serif;
 }
 
-a, p, span, th, td {
+a, p, span, th, td, label, input, textarea {
     font-family: 'Poppins', sans-serif;
 }
-
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.94em;
+    opacity: 0.7;
+}
 a {
     font-size: 1em;
 
@@ -15,6 +19,16 @@ a {
 
     @include mobile {
         font-size: 1em;
+    }
+}
+input, textarea, label {
+    font-size: 1em;
+    @include small-screen {
+        font-size: 0.82em;
+    }
+
+    @include mobile {
+        font-size: 0.82em;
     }
 }
 

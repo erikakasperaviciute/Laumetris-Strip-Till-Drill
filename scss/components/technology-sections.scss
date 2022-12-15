@@ -145,7 +145,6 @@
     .tech-content {
         display: flex;
         flex-direction: column;
-        // flex-wrap: wrap;
         justify-content: center;
         margin-left: 30px;
         width: 40%;
@@ -310,7 +309,6 @@
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     display: flex;
-
     cursor: pointer;
     width: 280px;
     padding: 8px 0;
@@ -322,6 +320,8 @@
     &:hover {
         color: green;
         fill: green;
+        transform: scale(1.05);
+        transition-duration: 0.3s;
     }
 
     .btn-svg {
